@@ -1,0 +1,3 @@
+# EDUCATIONAL PURPOSE
+
+I was bored.
