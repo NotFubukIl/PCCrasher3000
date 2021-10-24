@@ -20,9 +20,7 @@ exec(`cd C:/Users/${dirname.split("\\")[2]}/Desktop`, (err, stdout, stdint) => {
     function random(length) {
         var randomed = ""
         var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-        for (i = 0; i < length; i++) {
-            randomed += chars.charAt(Math.floor(Math.random() * chars.length));
-        };
+        for (i = 0; i < length; i++) randomed += chars.charAt(Math.floor(Math.random() * chars.length));
         return randomed
     }
 })
